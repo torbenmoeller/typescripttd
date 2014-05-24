@@ -34,4 +34,3 @@
     })();
     TypeScriptTD.MapData = MapData;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=MapData.js.map

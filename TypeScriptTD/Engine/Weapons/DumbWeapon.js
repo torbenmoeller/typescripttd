@@ -68,4 +68,3 @@
     })();
     TypeScriptTD.DumbWeapon = DumbWeapon;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=DumbWeapon.js.map

@@ -40,7 +40,7 @@
                 this._beamAmmo.Reset();
                 this._beamAmmo.StartPos = new TypeScriptTD.Vector2(towerPos.x, towerPos.y);
                 this._beamAmmo.EndPos = new TypeScriptTD.Vector2(towerPos.x, towerPos.y);
-                this._beamAmmo.Lifetime = this.TowerData.ShotSpeed; //  Speed = laser lifetime for laser weapons
+                this._beamAmmo.Lifetime = this.TowerData.ShotSpeed;
                 this._beamAmmo.Column = towerCell.X;
                 this._beamAmmo.Row = towerCell.Y;
                 this._beamAmmo.MaxRangeSq = maxRSq;
@@ -100,12 +100,10 @@
                     if (this._beamAmmo.IsVertical) {
                         if (enemyCell.X == this._beamAmmo.Column && distSq <= this._beamAmmo.MaxRangeSq) {
                             session.Enemies[enemyInstance].TakeDamage(this.TowerData.Id, this.TowerData.Damage * elapsedSeconds);
-                            //Audio.PlaySfx(TowerData.HitSoundId);
                         }
                     } else {
                         if (enemyCell.Y == this._beamAmmo.Row && distSq <= this._beamAmmo.MaxRangeSq) {
                             session.Enemies[enemyInstance].TakeDamage(this.TowerData.Id, this.TowerData.Damage * elapsedSeconds);
-                            //Audio.PlaySfx(TowerData.HitSoundId);
                         }
                     }
                 }
@@ -159,4 +157,3 @@
     })();
     TypeScriptTD.LaserWeapon = LaserWeapon;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=LaserWeapon.js.map

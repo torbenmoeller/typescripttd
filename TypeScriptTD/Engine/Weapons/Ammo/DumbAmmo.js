@@ -18,12 +18,7 @@ var TypeScriptTD;
             this.sprite.y = this.Position.y;
 
             if (this.IsHit) {
-                //if (HitAnimation != null && HitAnimation.IsPlaying) {
-                //    HitAnimation.Update(elapsedSeconds);
-                //}
-                //else {
                 this.IsAlive = false;
-                //}
             } else {
                 var v = this.Direction.multiply(elapsedTime * this.Speed);
                 this.Position = this.Position.add(v);
@@ -39,13 +34,8 @@ var TypeScriptTD;
                         if ((session.Enemies[e].Position.subtract(this.Position)).getLengthSquared() <= halfCell) {
                             session.Enemies[e].TakeDamage(data.Id, data.Damage);
 
-                            //Audio.PlaySfx(data.HitSoundId);
-                            //if (HitAnimation != null) {
                             this.IsHit = true;
 
-                            //HitAnimation.Play(data.AnimationFps);
-                            //}
-                            //else {
                             this.IsAlive = false;
 
                             break;
@@ -58,4 +48,3 @@ var TypeScriptTD;
     })(TypeScriptTD.Ammo);
     TypeScriptTD.DumbAmmo = DumbAmmo;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=DumbAmmo.js.map

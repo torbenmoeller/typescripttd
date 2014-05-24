@@ -44,4 +44,3 @@
     })();
     TypeScriptTD.Vector2 = Vector2;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Vector2.js.map

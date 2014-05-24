@@ -19,4 +19,3 @@
     })();
     TypeScriptTD.CreepData = CreepData;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=CreepData.js.map

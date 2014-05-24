@@ -31,7 +31,6 @@
                     break;
             }
 
-            //Movement
             this.CurrentDirection = targetPoint.subtract(this.Position);
             this.CurrentDirection = this.CurrentDirection.normalize();
             var movement = this.CurrentDirection.multiply(this.Data.Speed * this.gs.Grid.cellSize * elapsedtime);
@@ -41,7 +40,6 @@
             this.Sprite.y = this.Position.y;
             this.Sprite.bringToTop();
 
-            //updateTargetIfReachedDestination
             if (targetPoint.subtract(this.Position).getLengthSquared() <= this.gs.Grid.cellSize) {
                 switch (this.Stage) {
                     case 0 /* GoingToStart */:
@@ -59,8 +57,6 @@
                         }
                         break;
                     case 2 /* GoingToDespawn */:
-                        //Escaped
-                        //Health = 0;
                         this.Escaped = true;
 
                         break;
@@ -75,4 +71,3 @@
     })();
     TypeScriptTD.EnemyInstance = EnemyInstance;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=EnemyInstance.js.map

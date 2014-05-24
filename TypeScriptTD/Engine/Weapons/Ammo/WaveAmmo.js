@@ -20,7 +20,6 @@
             for (var enemyInstance in session.Enemies) {
                 if ((session.Enemies[enemyInstance].Position.subtract(this.Epicenter)).getLengthSquared() <= rsq && ((session.Enemies[enemyInstance].Data.CanFly && data.CanShootFlying) || (!session.Enemies[enemyInstance].Data.CanFly && data.CanShootLand))) {
                     session.Enemies[enemyInstance].TakeDamage(data.Id, data.Damage * elapsedTime);
-                    //Audio.PlaySfx(data.HitSoundId);
                 }
             }
         };
@@ -38,4 +37,3 @@
     })();
     TypeScriptTD.WaveAmmo = WaveAmmo;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=WaveAmmo.js.map

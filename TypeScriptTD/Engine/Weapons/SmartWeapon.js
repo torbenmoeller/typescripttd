@@ -37,10 +37,6 @@
                 item.Target = closest;
                 item.ShotTexture = this.ShotTexture;
 
-                //if (this.TowerData.HitTexture != null && item.HitAnimation == null) {
-                //	item.HitAnimation = new AnimatedSprite(new Point((int)(TowerData.HitTexture.Width / TowerData.AnimationFps), TowerData.HitTexture.Height), false);
-                //	item.HitAnimation.SetTexture(TowerData.HitTexture);
-                //}
                 this._projectiles.push(item);
                 this._sinceLastShot = 0;
                 return true;
@@ -54,7 +50,6 @@
             for (var i = this._projectiles.length - 1; i >= 0; i--) {
                 this._projectiles[i].Update(elapsedTime, this.TowerData, session);
 
-                //Draw
                 this._projectiles[i].draw(session);
 
                 if (!this._projectiles[i].IsAlive) {
@@ -67,4 +62,3 @@
     })();
     TypeScriptTD.SmartWeapon = SmartWeapon;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=SmartWeapon.js.map

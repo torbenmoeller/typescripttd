@@ -1,0 +1,5 @@
+C:\Users\Torben\Source\Repos\typescripttd\TypeScriptTD\bin\TypeScriptTD.dll.config
+C:\Users\Torben\Source\Repos\typescripttd\TypeScriptTD\bin\TypeScriptTD.dll
+C:\Users\Torben\Source\Repos\typescripttd\TypeScriptTD\bin\TypeScriptTD.pdb
+C:\Users\Torben\Source\Repos\typescripttd\TypeScriptTD\obj\Debug\TypeScriptTD.dll
+C:\Users\Torben\Source\Repos\typescripttd\TypeScriptTD\obj\Debug\TypeScriptTD.pdb

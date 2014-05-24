@@ -25,7 +25,6 @@
                         enemy.Health = enemy.Data.Health * run.HealthMod;
                         enemy.Stage = 0 /* GoingToStart */;
 
-                        //enemy.escaped = false;
                         enemy.Position = run.SpawnPoint;
                         enemy.DestX = run.DestX;
                         enemy.DestY = run.DestY;
@@ -40,7 +39,6 @@
 
                         session.Enemies.push(enemy);
 
-                        //Audio.PlaySfx(enemy.Data.SpawnSoundId);
                         run.NumCreated++;
                         run.TimeToNext = run.TimeBetween;
                     }
@@ -86,4 +84,3 @@
     })();
     TypeScriptTD.Spawner = Spawner;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Spawner.js.map

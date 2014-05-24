@@ -22,4 +22,3 @@
     })();
     TypeScriptTD.TowerButton = TowerButton;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=TowerButton.js.map

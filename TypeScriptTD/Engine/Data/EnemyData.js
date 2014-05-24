@@ -22,4 +22,3 @@
     })();
     TypeScriptTD.EnemyData = EnemyData;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=EnemyData.js.map

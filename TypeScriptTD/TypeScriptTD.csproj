@@ -53,144 +53,416 @@
     <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
-    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="assets\Audio\SFX\01_Single_Machine_Gun_Cannon.wav" />
-    <Content Include="assets\Audio\SFX\02_Missile_Heatseeker.wav" />
-    <Content Include="assets\Audio\SFX\03_Missile_Fire_.wav" />
-    <Content Include="assets\Audio\SFX\04_Explosion.wav" />
-    <Content Include="assets\Audio\SFX\05_Laser_Firing.wav" />
-    <Content Include="assets\Audio\SFX\06_Earthquake.wav" />
-    <Content Include="assets\Audio\SFX\07_Wave_Begin.wav" />
-    <Content Include="assets\Audio\SFX\08_Victory.wav" />
-    <Content Include="assets\Audio\SFX\09_Defeat_Loses_Level.wav" />
-    <Content Include="assets\Audio\SFX\10_Construction_Tower.wav" />
-    <Content Include="assets\Audio\SFX\11_Sell_Tower.wav" />
-    <Content Include="assets\Audio\SFX\12_Construction_Tower_Upgrade.wav" />
-    <Content Include="assets\Audio\SFX\19_New_Map_Loads.wav" />
-    <Content Include="assets\Audio\SFX\20_Basic_Land_Enemy_Spawn.wav" />
-    <Content Include="assets\Audio\SFX\21_Basic_Land_Enemy_Death.wav" />
-    <Content Include="assets\Audio\SFX\22_Slow_Enemy_Spawn.wav" />
-    <Content Include="assets\Audio\SFX\23_Slow_Enemy_Death.wav" />
-    <Content Include="assets\Audio\SFX\24_Fast_Enemy_Spawn.wav" />
-    <Content Include="assets\Audio\SFX\25_Fast_Land_Enemy_Death.wav" />
-    <Content Include="assets\Audio\SFX\26_Slow_Flyer_Spawn.wav" />
-    <Content Include="assets\Audio\SFX\27_Slow_Flyer_Death.wav" />
-    <Content Include="assets\Audio\SFX\28_Fast_Flyer_Spawn.wav" />
-    <Content Include="assets\Audio\SFX\29_Fast_Flyer_Death.wav" />
-    <Content Include="assets\button.png" />
-    <Content Include="assets\Disable.png" />
-    <Content Include="assets\Textures\Backgrounds\1-main.jpg" />
-    <Content Include="assets\Textures\Backgrounds\2-level-select.jpg" />
-    <Content Include="assets\Textures\Backgrounds\3-loading.jpg" />
-    <Content Include="assets\Textures\Backgrounds\4-highscores.jpg" />
-    <Content Include="assets\Textures\Backgrounds\playscreen.png" />
-    <Content Include="assets\Textures\Buttons\back-previous.png" />
-    <Content Include="assets\Textures\Buttons\disabled.png" />
-    <Content Include="assets\Textures\Buttons\enabled.png" />
-    <Content Include="assets\Textures\Buttons\Enter.png" />
-    <Content Include="assets\Textures\Buttons\Exit.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-options.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-pause.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-play.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-playFF.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-sell.png" />
-    <Content Include="assets\Textures\Buttons\HUD-button-upgrade.png" />
-    <Content Include="assets\Textures\Buttons\locked.png" />
-    <Content Include="assets\Textures\Buttons\next-wave.png" />
-    <Content Include="assets\Textures\Buttons\next-wave2.png" />
-    <Content Include="assets\Textures\Buttons\next.png" />
-    <Content Include="assets\Textures\Buttons\triple-speed.png" />
-    <Content Include="assets\Textures\Buttons\X1.png" />
-    <Content Include="assets\Textures\Buttons\X2.png" />
-    <Content Include="assets\Textures\Buttons\X3.png" />
-    <Content Include="assets\Textures\Creeps\flyer-fast.png" />
-    <Content Include="assets\Textures\Creeps\flyer-slow.png" />
-    <Content Include="assets\Textures\Creeps\land-basic.png" />
-    <Content Include="assets\Textures\Creeps\land-fast.png" />
-    <Content Include="assets\Textures\Creeps\land-slow.png" />
-    <Content Include="assets\Textures\HelpScreens\Help1.jpg" />
-    <Content Include="assets\Textures\HelpScreens\Help2.jpg" />
-    <Content Include="assets\Textures\HelpScreens\Help3.jpg" />
-    <Content Include="assets\Textures\HelpScreens\Help4.jpg" />
-    <Content Include="assets\Textures\HitEffects\explosion.png" />
-    <Content Include="assets\Textures\Maps\Map1.jpg" />
-    <Content Include="assets\Textures\Maps\Map2.jpg" />
-    <Content Include="assets\Textures\Maps\Map3.jpg" />
-    <Content Include="assets\Textures\Maps\Map4.jpg" />
-    <Content Include="assets\Textures\Maps\Map5.jpg" />
-    <Content Include="assets\Textures\Towers\HUD-tower-gun-unavailable.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-gun.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-laser-unavailable.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-laser.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-missile-unavailable.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-missile.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-quake-wave-unavailable.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-quake-wave.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-rocket-unavailable.png" />
-    <Content Include="assets\Textures\Towers\HUD-tower-rocket.png" />
-    <Content Include="assets\Textures\Towers\tower-gun.png" />
-    <Content Include="assets\Textures\Towers\tower-gun1.png" />
-    <Content Include="assets\Textures\Towers\tower-gun2.png" />
-    <Content Include="assets\Textures\Towers\tower-gun3.png" />
-    <Content Include="assets\Textures\Towers\tower-gun4.png" />
-    <Content Include="assets\Textures\Towers\tower-laser.png" />
-    <Content Include="assets\Textures\Towers\tower-laser1.png" />
-    <Content Include="assets\Textures\Towers\tower-laser2.png" />
-    <Content Include="assets\Textures\Towers\tower-laser3.png" />
-    <Content Include="assets\Textures\Towers\tower-laser4.png" />
-    <Content Include="assets\Textures\Towers\tower-missile.png" />
-    <Content Include="assets\Textures\Towers\tower-missile1.png" />
-    <Content Include="assets\Textures\Towers\tower-missile2.png" />
-    <Content Include="assets\Textures\Towers\tower-missile3.png" />
-    <Content Include="assets\Textures\Towers\tower-missile4.png" />
-    <Content Include="assets\Textures\Towers\tower-quake-wave.png" />
-    <Content Include="assets\Textures\Towers\tower-quake-wave1.png" />
-    <Content Include="assets\Textures\Towers\tower-quake-wave2.png" />
-    <Content Include="assets\Textures\Towers\tower-quake-wave3.png" />
-    <Content Include="assets\Textures\Towers\tower-quake-wave4.png" />
-    <Content Include="assets\Textures\Towers\tower-rocket.png" />
-    <Content Include="assets\Textures\Towers\tower-rocket1.png" />
-    <Content Include="assets\Textures\Towers\tower-rocket2.png" />
-    <Content Include="assets\Textures\Towers\tower-rocket3.png" />
-    <Content Include="assets\Textures\Towers\tower-rocket4.png" />
-    <Content Include="assets\Textures\Weapons\fx-laser.png" />
-    <Content Include="assets\Textures\Weapons\fx-missile.png" />
-    <Content Include="assets\Textures\Weapons\fx-quake-wave.png" />
-    <Content Include="assets\Textures\Weapons\fx-rocket.png" />
-    <Content Include="assets\Textures\Weapons\fx-small-round.png" />
-    <Content Include="index.html" />
-    <Content Include="lib\phaser\phaser.js" />
+    <Content Include="assets\Audio\SFX\01_Single_Machine_Gun_Cannon.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\02_Missile_Heatseeker.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\03_Missile_Fire_.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\04_Explosion.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\05_Laser_Firing.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\06_Earthquake.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\07_Wave_Begin.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\08_Victory.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\09_Defeat_Loses_Level.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\10_Construction_Tower.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\11_Sell_Tower.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\12_Construction_Tower_Upgrade.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\19_New_Map_Loads.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\20_Basic_Land_Enemy_Spawn.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\21_Basic_Land_Enemy_Death.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\22_Slow_Enemy_Spawn.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\23_Slow_Enemy_Death.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\24_Fast_Enemy_Spawn.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\25_Fast_Land_Enemy_Death.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\26_Slow_Flyer_Spawn.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\27_Slow_Flyer_Death.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\28_Fast_Flyer_Spawn.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\SFX\29_Fast_Flyer_Death.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Disable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Backgrounds\1-main.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Backgrounds\2-level-select.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Backgrounds\3-loading.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Backgrounds\4-highscores.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Backgrounds\playscreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\back-previous.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\disabled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\enabled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\Enter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\Exit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-options.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-pause.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-play.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-playFF.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-sell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\HUD-button-upgrade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\locked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\next-wave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\next-wave2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\next.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\triple-speed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\X1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\X2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Buttons\X3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Creeps\flyer-fast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Creeps\flyer-slow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Creeps\land-basic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Creeps\land-fast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Creeps\land-slow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\HelpScreens\Help1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\HelpScreens\Help2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\HelpScreens\Help3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\HelpScreens\Help4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\HitEffects\explosion.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Maps\Map1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Maps\Map2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Maps\Map3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Maps\Map4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Maps\Map5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-gun-unavailable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-gun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-laser-unavailable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-laser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-missile-unavailable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-missile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-quake-wave-unavailable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-quake-wave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-rocket-unavailable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\HUD-tower-rocket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-gun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-gun1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-gun2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-gun3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-gun4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-laser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-laser1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-laser2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-laser3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-laser4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-missile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-missile1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-missile2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-missile3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-missile4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-quake-wave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-quake-wave1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-quake-wave2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-quake-wave3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-quake-wave4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-rocket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-rocket1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-rocket2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-rocket3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Towers\tower-rocket4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Weapons\fx-laser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Weapons\fx-missile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Weapons\fx-quake-wave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Weapons\fx-rocket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Textures\Weapons\fx-small-round.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="game.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\phaser\phaser.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="lib\phaser\phaser.min.js" />
-    <Content Include="web.config" />
-    <Content Include="assets\Data\Enemies\flyer-fast.json" />
-    <Content Include="assets\Data\Enemies\flyer-slow.json" />
-    <Content Include="assets\Data\Enemies\land-basic.json" />
-    <Content Include="assets\Data\Enemies\land-fast.json" />
-    <Content Include="assets\Data\Enemies\land-slow.json" />
-    <Content Include="assets\Data\Maps\map-1.json" />
-    <Content Include="assets\Data\Maps\map-2.json" />
-    <Content Include="assets\Data\Maps\map-3.json" />
-    <Content Include="assets\Data\Maps\map-4.json" />
-    <Content Include="assets\Data\Maps\map-5.json" />
-    <Content Include="assets\Data\Maps\stress.json" />
-    <Content Include="assets\Data\Maps\test.json" />
-    <Content Include="assets\Data\Towers\tower-gun-0.json" />
-    <Content Include="assets\Data\Towers\tower-gun-1.json" />
-    <Content Include="assets\Data\Towers\tower-gun-2.json" />
-    <Content Include="assets\Data\Towers\tower-laser-0.json" />
-    <Content Include="assets\Data\Towers\tower-laser-1.json" />
-    <Content Include="assets\Data\Towers\tower-laser-2.json" />
-    <Content Include="assets\Data\Towers\tower-missile-0.json" />
-    <Content Include="assets\Data\Towers\tower-missile-1.json" />
-    <Content Include="assets\Data\Towers\tower-missile-2.json" />
-    <Content Include="assets\Data\Towers\tower-quake-wave-0.json" />
-    <Content Include="assets\Data\Towers\tower-quake-wave-1.json" />
-    <Content Include="assets\Data\Towers\tower-quake-wave-2.json" />
-    <Content Include="assets\Data\Towers\tower-rocket-0.json" />
-    <Content Include="assets\Data\Towers\tower-rocket-1.json" />
-    <Content Include="assets\Data\Towers\tower-rocket-2.json" />
+    <Content Include="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Enemies\flyer-fast.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Enemies\flyer-slow.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Enemies\land-basic.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Enemies\land-fast.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Enemies\land-slow.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\map-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\map-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\map-3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\map-4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\map-5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\stress.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Maps\test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-gun-0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-gun-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-gun-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-laser-0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-laser-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-laser-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-missile-0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-missile-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-missile-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-quake-wave-0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-quake-wave-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-quake-wave-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-rocket-0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-rocket-1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Data\Towers\tower-rocket-2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="TypeScriptTD.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -241,6 +513,9 @@
     <Folder Include="assets\Audio\Music\" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptOutFile>game.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptOutFile>game.js</TypeScriptOutFile>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />

@@ -10,4 +10,3 @@
     })();
     TypeScriptTD.Ammo = Ammo;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Ammo.js.map

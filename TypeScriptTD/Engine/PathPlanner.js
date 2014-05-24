@@ -45,7 +45,6 @@
 
     var PathNode = (function () {
         function PathNode() {
-            // N, S, E, W
             this.Adjacent = new Array();
         }
         PathNode.prototype.TotalCost = function () {
@@ -69,10 +68,8 @@
             this.columnsize = 0;
         }
         PathPlanner.prototype.InitNodes = function (cells) {
-            //own impl
             this.columnsize = cells.Columns;
 
-            //
             this._nodeGrid = new Array(cells.Rows * cells.Columns);
             for (var gridCell in cells.CellsArray) {
                 var p = new PathNode();
@@ -140,7 +137,6 @@
             _open.push(startNode);
 
             while (_open.length > 0) {
-                // Simulate "popping" from _open
                 var node = _open[0];
                 _open.splice(0, 1);
 
@@ -199,4 +195,3 @@
         return false;
     }
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=PathPlanner.js.map

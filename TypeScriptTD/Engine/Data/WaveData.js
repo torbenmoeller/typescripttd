@@ -28,4 +28,3 @@
     })();
     TypeScriptTD.WaveData = WaveData;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=WaveData.js.map

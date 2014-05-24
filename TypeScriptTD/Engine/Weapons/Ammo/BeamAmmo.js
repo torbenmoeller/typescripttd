@@ -23,4 +23,3 @@ var TypeScriptTD;
     })(TypeScriptTD.Ammo);
     TypeScriptTD.BeamAmmo = BeamAmmo;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=BeamAmmo.js.map

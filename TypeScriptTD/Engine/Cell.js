@@ -14,4 +14,3 @@
     })();
     TypeScriptTD.Cell = Cell;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Cell.js.map

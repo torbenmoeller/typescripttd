@@ -1,5 +1,5 @@
-﻿window.onload = () => {
+﻿//window.onload = () => {
 
-    var game = new TypeScriptTD.Boot();
+//    var game = new TypeScriptTD.Boot();
 
-};
+//};

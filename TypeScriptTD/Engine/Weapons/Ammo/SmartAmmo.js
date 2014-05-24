@@ -17,7 +17,6 @@ var TypeScriptTD;
         SmartAmmo.prototype.Update = function (elapsedTime, data, session) {
             if (this.IsHit) {
                 this.IsAlive = false;
-                //}
             } else {
                 var v = (this.Target.Position.subtract(this.Position));
                 v = v.normalize();
@@ -38,7 +37,6 @@ var TypeScriptTD;
                     if ((this.Target.Position.subtract(this.Position)).getLengthSquared() <= halfCell) {
                         this.Target.TakeDamage(data.Id, data.Damage);
 
-                        //Audio.PlaySfx(data.HitSoundId);
                         this.IsHit = true;
                         this.IsAlive = false;
                     }
@@ -60,4 +58,3 @@ var TypeScriptTD;
     })(TypeScriptTD.Ammo);
     TypeScriptTD.SmartAmmo = SmartAmmo;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=SmartAmmo.js.map

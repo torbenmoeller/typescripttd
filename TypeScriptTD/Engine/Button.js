@@ -22,4 +22,3 @@
     })();
     TypeScriptTD.Button = Button;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Button.js.map

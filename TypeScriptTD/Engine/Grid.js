@@ -58,4 +58,3 @@
     })();
     TypeScriptTD.Grid = Grid;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=Grid.js.map

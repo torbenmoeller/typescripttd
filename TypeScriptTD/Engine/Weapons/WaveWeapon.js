@@ -45,7 +45,6 @@
             for (var i = this.waves.length - 1; i >= 0; i--) {
                 this.waves[i].Update(elapsedTime, this.TowerData, session);
 
-                //Draw
                 this.waves[i].draw(session);
 
                 if (!this.waves[i].IsAlive) {
@@ -57,4 +56,3 @@
     })();
     TypeScriptTD.WaveWeapon = WaveWeapon;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=WaveWeapon.js.map

@@ -36,4 +36,3 @@
     })();
     TypeScriptTD.TowerData = TowerData;
 })(TypeScriptTD || (TypeScriptTD = {}));
-//# sourceMappingURL=TowerData.js.map
