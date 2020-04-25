@@ -4,24 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
     "lint": "tslint src/**/*.ts",
     "test": "echo 'noop'",
-    "prepublish": " npm run build && npm run test",
-    "prepush": "npm run prepublish"
-  },
-  "author": {
-    "name": "SuperPaintman",
-    "email": "SuperPaintmanDeveloper@gmail.com",
-    "url": "https://superpaintman.com/"
+    "build": "npm run compile && npm run copy-assets",
+    "compile": "tsc",
+    "copy-assets": "cpx src/assets/**/* dist/assets  && cpx src/index.html dist/ "
   },
   "files": [
     "LICENSE",
     "README.md",
     "dist/",
     "templates/",
-    "assets/"
+    "src/assets/"
   ],
   "devDependencies": {
     "@types/node": "7.0.5",
@@ -44,5 +38,7 @@
     "webpack": "2.2.1",
     "webpack-dev-server": "2.4.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cpx": "^1.5.0"
+  }
 }

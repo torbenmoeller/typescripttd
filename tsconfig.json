@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "pretty": true
+    "pretty": true,
+    "outDir": "dist"
   },
   "files": [
     "./node_modules/phaser/typescript/box2d.d.ts",
